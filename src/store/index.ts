@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import { configureStore } from '@reduxjs/toolkit';
 import { useDispatch } from 'react-redux';
 import uiReducer from './slices/uiSlice';
