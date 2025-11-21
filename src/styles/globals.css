@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Wrapper for dark theme */
+.app-dark {
+  background-color: #111827; /* gray-900 */
+  color: #ffffff;            /* white */
+  min-height: 100vh;
+}
+
+/* Skeleton shimmer */
+/* .skeleton {
+  @apply rounded-lg shadow-md;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.03) 25%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.03) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s linear infinite;
+} */
+
+/* Shimmer keyframes */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Avatar skeleton */
+/* .avatar-skeleton {
+  @apply w-12 h-12 rounded-full skeleton;
+} */
+
+/* Card layout */
+/* .card-row {
+  @apply flex flex-wrap gap-4 justify-start;
+} */
+
+.card-skeleton {
+  background-color: #1f2937; /* gray-800 */
+  flex: 1 1 220px; /* responsive width */
+  min-height: 180px;
+}
+
+/* Card content vertical stack */
+/* .card-content {
+  @apply flex flex-col gap-2;
+} */
+
+/* Price gain/loss */
+/* .price-gain {
+  @apply text-green-500 font-bold;
+  transition: color 0.3s ease;
+} */
+
+/* .price-loss {
+  @apply text-red-500 font-bold;
+  transition: color 0.3s ease;
+} */
+
+/* Text shimmer for loading */
+/* .text-skeleton {
+  @apply h-4 w-full rounded-md skeleton;
+} */
+
+/* Smaller widths for variety (escaped) */
+.text-skeleton.w-3\/4 {
+  width: 75%;
+}
+
+.text-skeleton.w-32 {
+  width: 8rem;
+}

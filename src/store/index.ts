@@ -1,0 +1,14 @@
+'use client'
+import { configureStore } from '@reduxjs/toolkit';
+import { useDispatch } from 'react-redux';
+import uiReducer from './slices/uiSlice';
+
+export const store = configureStore({
+  reducer: {
+    ui: uiReducer,
+  },
+});
+
+export type AppDispatch = typeof store.dispatch;
+export type RootState = ReturnType<typeof store.getState>;
+export const useAppDispatch = () => useDispatch<AppDispatch>();
